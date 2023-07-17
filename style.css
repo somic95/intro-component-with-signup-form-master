@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Poppins',sans-serif;
+}
+
+body {
+    background: url(./images/bg-intro-desktop.png) no-repeat;
+    background-color: hsl(0, 100%, 74%) ;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    margin: 0 18rem;
+    gap: 2.5rem;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+/* learn-section */
+.learn {
+    width: 50%;
+}
+
+.learn h1 {
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+/* trial-section */
+.trial {
+    width: 50%;
+}
+
+.trial .txt-promo {
+    background-color: hsl(248, 32%, 49%);
+    text-align: center;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    box-shadow: 0px 6px 0px hsl(0, 0%, 0%, 0.3);
+}
+
+.txt-promo span {
+    font-weight: bold;
+}
+
+form {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 6px 0px hsl(0, 0%, 0%, 0.3);
+}
+
+form .form-wrap {
+    padding: 2rem 2rem;
+    gap: 1.25rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+input {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid hsl(246, 25%, 77%);
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.msg {
+    color: hsl(0, 100%, 74%);
+    text-align: end;
+    font-style: italic;
+    font-size: 12px;
+}
+
+.icon {
+    position: absolute;
+    right: 18%;
+    transform: translateY(-150%);
+}
+
+button {
+    background-color: hsl(154, 59%, 51%);
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    padding: 1rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    box-shadow: 0px 6px 0px hsl(154, 58%, 35%);
+}
+
+.terms {
+    color: hsl(246, 25%, 77%) ;
+    font-size: 10px;
+    text-align: center;
+}
+
+.terms span {
+    font-size: 10px;
+    color: hsl(0, 100%, 74%);
+    font-weight: 700;
+}
+
+/* error section */
+.msg, 
+.icon {
+    display: none;
+}
+
+.error input {
+    border: 2px solid hsl(0, 100%, 74%);
+}
+
+.error input:focus {
+    color: hsl(0, 100%, 74%);
+}
+
+.error .icon {
+    display: block;
+}
+
+.error .msg {
+    display: block;
+}
+
+@media (max-width: 1199px) {
+    .container {
+        flex-direction: column;
+        margin: 5rem -5rem;
+    }
+
+    h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .learn p {
+        text-align: center;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.8;
+    }
+    
+    .txt-promo {
+        font-size: 14px;
+    }
+
+    input {
+        padding: 1rem;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    .icon {
+        position: absolute;
+        right: 25%;
+        transform: translateY(-150%);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
